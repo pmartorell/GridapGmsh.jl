@@ -21,8 +21,8 @@ function main(parts)
   writevtk(Ω,"Ω",cellfields=["uh"=>uh,"eh"=>eh])
 end
 
-prun(main,sequential,6)
-prun(main,sequential,1)
-prun(main,mpi,1)
+with_backend(main,SequentialBackend(),6)
+with_backend(main,SequentialBackend(),1)
+with_backend(main,MPIBackend(),1)
 
 end # module
