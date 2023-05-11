@@ -9,7 +9,7 @@ using Gridap.TensorValues
 using Gridap.Fields
 using Gridap.ReferenceFEs
 using Gridap.Geometry
-using Gridap.Geometry: max_cells_arround_vertex
+using Gridap.Geometry: max_cells_around_vertex
 using Gridap.Geometry: _fill_cells_around_scratch!
 using Gridap.Geometry: _set_intersection!
 
